@@ -16,7 +16,7 @@ To read about L<Mojo::Promise::Role::Any>, look at the embedded documentation
 in the module itself. Inside the distribution, you can format it
 with L<perldoc|http://perldoc.perl.org/perldoc.html>:
 
-	% perldoc lib/[% module_path %]
+	% perldoc lib/Mojo/Promise/Role/Any
 
 If you have already installed the module, you can specify the module
 name instead of the file location:
