@@ -44,7 +44,7 @@ sub any {
 
 =head1 SEE ALSO
 
-L<Mojolicious>, L<Role::Tiny>
+L<Mojolicious>, L<Mojo::Promise>, L<Role::Tiny>
 
 =head1 SOURCE AVAILABILITY
 
