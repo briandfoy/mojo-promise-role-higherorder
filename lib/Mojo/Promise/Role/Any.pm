@@ -13,7 +13,7 @@ $VERSION = '0.001_01';
 
 =head1 NAME
 
-Mojo::Promise::Role::Any - Take the first fulfilled promise
+Mojo::Promise::Role::Any - Fulfill with the first fulfilled promise
 
 =head1 SYNOPSIS
 
