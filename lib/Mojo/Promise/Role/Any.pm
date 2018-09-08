@@ -46,9 +46,6 @@ sub any {
 
 	my $resolved = 0;
 	my $results = [];
-=head1 SEE ALSO
-
-L<Mojolicious>, L<Mojo::Promise>, L<Role::Tiny>
 
 	for my $i ( 0 .. $#promises ) {
 		my $seq = $i;
@@ -66,6 +63,9 @@ L<Mojolicious>, L<Mojo::Promise>, L<Role::Tiny>
 
 =back
 
+=head1 SEE ALSO
+
+L<Mojolicious>, L<Mojo::Promise>, L<Role::Tiny>
 
 =head1 SOURCE AVAILABILITY
 
