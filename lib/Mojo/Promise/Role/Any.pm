@@ -37,12 +37,15 @@ responds.
 
 =item any
 
+Takes a lists of promises (or thenables) and returns another promise
+that fulfills. If any of the promises fulfills,
+
 =cut
 
 sub any {
 	my( $self, @promises ) = @_;
 
-	my $any = $class->new;
+	my $any = $self->new;
 
 	my $resolved = 0;
 	my $results = [];
