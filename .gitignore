@@ -4,3 +4,5 @@ Makefile
 blib/
 *.old
 pm_to_blib
+cover_db
+*.lock
