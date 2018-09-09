@@ -1,4 +1,6 @@
 package Mojo::Promise::Role::Any;
+use Mojo::Base '-role';
+
 use strict;
 use v5.26;
 
@@ -44,13 +46,10 @@ that fulfills. If any of the promises fulfills,
 
 sub any {
 	my( $self, @promises ) = @_;
-
+	my( $resolved, $results ) = ( 0, [] );
 	my $any = $self->new;
 
-	my $resolved = 0;
-	my $results = [];
-
-	for my $i ( 0 .. $#promises ) {
+	foreach my $i ( 0 .. $#promises ) {
 		my $seq = $i;
 		$promises[$seq]->then(
 			sub {
