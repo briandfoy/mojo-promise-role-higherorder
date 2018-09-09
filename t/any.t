@@ -113,13 +113,17 @@ subtest all => sub {
 	};
 
 subtest no_promises => sub {
+	my $failed;
 	my $first = Mojo::Promise
 		->with_roles('+Any')
-		->any();
-	isa_ok( $first, $target );
+		->new;
+	can_ok( $first, qw(then any) );
 
-	my $failed;
-	$first->then( undef, sub { $failed = 'Good' } );
+	my $any = $first
+		->any()
+		->then( undef, sub { $failed = 'Good' } );
+	Mojo::IOLoop->one_tick;
+
 	is( $failed, 'Good' );
 	};
 
