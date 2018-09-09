@@ -4,9 +4,6 @@ use Mojo::Base '-role';
 use strict;
 use v5.26;
 
-use warnings;
-no warnings;
-
 use subs qw();
 use vars qw($VERSION);
 
@@ -25,8 +22,6 @@ Mojo::Promise::Role::Any - Fulfill with the first fulfilled promise
 	my $any_promise = Mojo::Promise
 		->with_roles( '+Any' )
 		->any( @promises );
-
-
 
 =head1 DESCRIPTION
 
