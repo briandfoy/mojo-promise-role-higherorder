@@ -1,4 +1,4 @@
-package Mojo::Promise::Role::Any;
+package Mojo::Promise::Role::HigherOrder;
 use strict;
 use warnings;
 
@@ -40,7 +40,7 @@ use File::Spec::Functions qw(catfile);
 my $module    = __PACKAGE__;
 ( my $dist = $module ) =~ s/::/-/g;
 
-my $github    = 'https://github.com/briandfoy/mojo_promise_role_any_none_some';
+my $github    = 'https://github.com/briandfoy/mojo-promise-role-higherorder';
 my $main_file = catfile( 'lib', split /::/, "$module.pm" );
 
 my %WriteMakefile = (

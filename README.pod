@@ -2,20 +2,21 @@
 
 =encoding utf8
 
-=for HTML <a href="https://travis-ci.org/briandfoy/mojo_promise_role_any_none_some"><img src="https://travis-ci.org/briandfoy/mojo_promise_role_any_none_some.svg?branch=master" /></a>
+=for HTML <a href="https://travis-ci.org/briandfoy/mojo-promise-role-higherorder"><img src="https://travis-ci.org/briandfoy/mojo-promise-role-higherorder.svg?branch=master" /></a>
 
-=for HTML <a href='https://ci.appveyor.com/project/briandfoy/mojo_promise_role_any_none_some'><img src='https://ci.appveyor.com/api/projects/status/oi4os0a3692je71r/branch/master?svg=true' /></a>
+=for HTML <a href='https://ci.appveyor.com/project/briandfoy/mojo-promise-role-higherorder'><img src='https://ci.appveyor.com/api/projects/status/y6bk6do143gbc5hv' /></a>
 
-=for HTML <a href='https://coveralls.io/github/briandfoy/mojo_promise_role_any_none_some?branch=master'><img src='https://coveralls.io/repos/github/briandfoy/mojo_promise_role_any_none_some/badge.svg?branch=master' alt='Coverage Status' /></a>
+=for HTML <a href='https://coveralls.io/github/briandfoy/mojo-promise-role-higherorder?branch=master'><img src='https://coveralls.io/repos/github/briandfoy/mojo-promise-role-higherorder/badge.svg?branch=master' alt='Coverage Status' /></a>
 
-=for HTML <a href="https://github.com/briandfoy/mojo_promise_role_any_none_some/blob/master/LICENSE"><img src="https://img.shields.io/cpan/l/Mojo-Promise-Role-Any.svg" /></a>
+=for HTML <a href="https://github.com/briandfoy/mojo-promise-role-higherorder/blob/master/LICENSE"><img src="https://img.shields.io/cpan/l/Mojo-Promise-Role-HigherOrder.svg" /></a>
 
-=for HTML <a href="http://www.metacpan.org/module/Mojo::Promise::Role::Any"><img src="https://img.shields.io/cpan/v/Mojo-Promise-Role-Any.svg" /></A>
+=for HTML <a href="http://www.metacpan.org/module/Mojo::Promise::Role::HigherOrder"><img src="https://img.shields.io/cpan/v/Mojo-Promise-Role-HigherOrder.svg" /></A>
 
-=head1 The Mojo::Promise::Role::Any module
+=head1 The Mojo::Promise::Role::HigherOrder module
 
-This is the I<README> for the L<Mojo::Promise::Role::Any>, C<::None>,
-and C<::Some> Perl modules,.
+This is the I<README> for the L<Mojo::Promise::Role::HigherOrder>, and
+umbrella module for the C<::Any>, C<::None>, and C<::Some> Mojolicious
+roles..
 
 You're probably looking at this because you don't know where else to
 find what you're looking for. Read this once and you might never have
@@ -28,15 +29,15 @@ itself. Inside the distribution, you can format it with
 L<perldoc|http://perldoc.perl.org/perldoc.html> (using C<::Any> as an
 example):
 
-	% perldoc lib/Mojo/Promise/Role/Any.pm
+	% perldoc lib/Mojo/Promise/Role/HigherOrder.pm
 
 If you have already installed the module, you can specify the module
 name instead of the file location:
 
-	% perldoc Mojo::Promise::Role::Any
+	% perldoc Mojo::Promise::Role::HigherOrder
 
 You can read the documentation and inspect the meta data on
-L<MetaCPAN|https://metacpan.org/pod/Mojo::Promise::Role::Any>.
+L<MetaCPAN|https://metacpan.org/pod/Mojo::Promise::Role::HigherOrder>.
 
 The standard module documentation has example uses in the SYNOPSIS
 section, but you can also look in the I<examples/> directory (if it's
@@ -47,8 +48,8 @@ there), or look at the test files in I<t/>.
 You can install this module with a CPAN client, which will resolve
 and install the dependencies:
 
-	% cpan Mojo::Promise::Role::Any
-	% cpanm Mojo::Promise::Role::Any
+	% cpan Mojo::Promise::Role::HigherOrder
+	% cpanm Mojo::Promise::Role::HigherOrder
 
 You can also install directly from the distribution directory, which
 will also install the dependencies:
@@ -75,16 +76,16 @@ the source repository:
 
 =over 4
 
-=item *	L<https://github.com/briandfoy/mojo_promise_role_any_none_some>
+=item *	L<https://github.com/briandfoy/mojo-promise-role-higherorder>
 
 =back
 
 If you find a problem, file a ticket in the L<issue
-tracker|https://github.com/briandfoy/mojo_promise_role_any_none_some/issues>:
+tracker|https://github.com/briandfoy/mojo-promise-role-higherorder/issues>:
 
 =over 4
 
-=item *	L<https://github.com/briandfoy/mojo_promise_role_any_none_some/issues>
+=item *	L<https://github.com/briandfoy/mojo-promise-role-higherorder/issues>
 
 =back
 
@@ -95,7 +96,7 @@ that's the best way for me to forget to do something.
 
 Besides the issue trackers, you can find help at
 L<Perlmonks|http://www.perlmonks.org> or
-L<Stackoverflow|http://www.stackoverflow.com>, both of which have many
+L<Stackoverflow|https://www.stackoverflow.com>, both of which have many
 competent Perlers who can answer your question, almost in real time.
 They might not know the particulars of this module, but they can help
 you diagnose your problem.
