@@ -43,18 +43,10 @@ sub resolve_one ( $number, $position ) {
 	$promises[$position]->resolve( qw(Bender Leela) );
 	Mojo::IOLoop->one_tick;
 
-	is( $#results, $position, 'End position is right' );
+	is( scalar @results, 2, 'There are two results' );
+	is( scalar @errors,  0, 'There are no errors' );
 
-	my( $first_defined ) = grep { defined $results[$_] } 0 .. $#results;
-	is( $first_defined, $position, 'First defined position is right' );
-	is(
-		ref $results[$position],
-		ref [],
-		'First defined position is an array ref'
-		);
-
-	is_deeply $results[$position], [ qw(Bender Leela) ], 'Result is correct';
-	is_deeply \@errors, [], 'promise not rejected';
+	is_deeply \@results, [ qw(Bender Leela) ], 'Result is correct';
 	}
 
 subtest first  => sub { resolve_one( 20,  0 ) };
@@ -80,13 +72,8 @@ subtest none => sub {
 	$_->reject foreach @promises;
 	Mojo::IOLoop->one_tick;
 
-	is( $#results, -1, 'End position is right' );
-
-	my( $first_defined ) = grep { defined $results[$_] } 0 .. $#results;
-	is( $first_defined, undef, 'There is no first position' );
-
-	is( scalar @results, 0 );
-	is( scalar @errors,  0 );
+	is( scalar @results, 0, 'There are no results' );
+	is( scalar @errors,  0, 'There are no errors' );
 	};
 
 subtest all => sub {
@@ -105,11 +92,14 @@ subtest all => sub {
 		sub { @errors  = @_ }
 		);
 
-	$promises[$_]->resolve($_) foreach 0 .. $#promises;
+	my @characters = qw( Leela Fry Farnsworth Amy Zap Kif );
+	$promises[$_]->resolve( $characters[$_] ) foreach 0 .. $#promises;
 	Mojo::IOLoop->one_tick;
 
 	is( scalar @results, 1 );
 	is( scalar @errors,  0 );
+
+	is( $results[0], 'Leela' );
 	};
 
 subtest no_promises => sub {
