@@ -67,7 +67,7 @@ my %WriteMakefile = (
 	'PREREQ_PM' => {
 		'Carp'        => '0',
 		'Mojolicious' => '7',
-		'Role::Tiny'  => '0',
+		'Role::Tiny'  => '2.000001',
 		},
 
 	'META_MERGE' => {
