@@ -22,6 +22,8 @@ Mojo::Promise::Role::HigherOrder - Fulfill with the first fulfilled promise
 
 =head1 DESCRIPTION
 
+This module is an umbrella for L<Mojo::Promise::Role::Any>,
+L<Mojo::Promise::Role::None>, and L<Mojo::Promise::Role::Some>.
 
 =head1 SEE ALSO
 
