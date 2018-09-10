@@ -3,10 +3,7 @@ use Mojo::Base '-role';
 
 use strict;
 
-use subs qw();
-use vars qw($VERSION);
-
-$VERSION = '0.001_01';
+our $VERSION = '1.001';
 
 =encoding utf8
 
