@@ -109,7 +109,7 @@ L<http://bluebirdjs.com/docs/api/promise.some.html>
 
 This source is in Github:
 
-	http://github.com/briandfoy/mojo-promise-role-any/
+	https://github.com/briandfoy/mojo-promise-any-none-some
 
 =head1 AUTHOR
 

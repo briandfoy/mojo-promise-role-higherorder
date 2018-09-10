@@ -59,7 +59,7 @@ L<Mojolicious>, L<Mojo::Promise>, L<Role::Tiny>
 
 This source is in Github:
 
-	http://github.com/briandfoy/mojo-promise-role-any/
+	https://github.com/briandfoy/mojo-promise-any-none-some
 
 =head1 AUTHOR
 

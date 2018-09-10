@@ -40,7 +40,7 @@ use File::Spec::Functions qw(catfile);
 my $module    = __PACKAGE__;
 ( my $dist = $module ) =~ s/::/-/g;
 
-my $github    = 'https://github.com/briandfoy/mojo-promise-role-any';
+my $github    = 'https://github.com/briandfoy/mojo-promise-any-none-some';
 my $main_file = catfile( 'lib', split /::/, "$module.pm" );
 
 my %WriteMakefile = (
