@@ -27,7 +27,8 @@ install:
   - sh: export PATH=/home/appveyor/perl5/bin:$PATH
   - perl -v
   - cpan App::cpanminus
-  - cpanm --installdeps .
+  - cmd: cpanm --installdeps .
+  - sh: sudo cpanm --installdeps .
 
 build_script:
   - perl Makefile.PL
