@@ -56,7 +56,7 @@ L<Mojolicious>, L<Mojo::Promise>, L<Role::Tiny>
 
 This source is in Github:
 
-	https://github.com/briandfoy/mojo-promise-any-none-some
+	https://github.com/briandfoy/mojo-promise-role-higherorder
 
 =head1 AUTHOR
 

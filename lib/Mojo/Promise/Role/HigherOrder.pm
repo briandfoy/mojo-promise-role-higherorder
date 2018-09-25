@@ -35,7 +35,7 @@ L<http://bluebirdjs.com/docs/api/promise.any.html>
 
 This source is in Github:
 
-	https://github.com/briandfoy/mojo-promise-any-none-some
+	https://github.com/briandfoy/mojo-promise-role-higherorder
 
 =head1 AUTHOR
 
