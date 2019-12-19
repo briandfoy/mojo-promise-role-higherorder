@@ -49,7 +49,11 @@ sub any {
 	my( $self, @promises ) = @_;
 	my $any = $self->new;
 
-	$_->then( sub { $any->resolve( @_ ) } ) foreach @promises;
+	my $count = 0;
+	$_->then(
+		sub { $any->resolve( @_ ) },
+		sub { $count++; $any->reject if $count == @promises }
+		) foreach @promises;
 
 	return @promises ? $any : $any->reject;
 	}
