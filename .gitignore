@@ -8,3 +8,4 @@ cover_db
 *.lock
 META*
 *.bak
+*.icould
