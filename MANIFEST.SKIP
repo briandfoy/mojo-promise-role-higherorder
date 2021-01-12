@@ -71,3 +71,6 @@
 \.travis\.yml
 \.?appveyor.yml
 Mojo-.*
+\bMANIFEST\s\d
+\bChanges\s\d
+
