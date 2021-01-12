@@ -9,3 +9,6 @@ cover_db
 META*
 *.bak
 *.icould
+MANIFEST*[123456789]
+Changes*[123456789]
+
