@@ -73,6 +73,6 @@
 Mojo-.*
 \bMANIFEST\s\d
 \bChanges\s\d
-.*.icloud
+\.icloud$
 \A\.github\b
 
