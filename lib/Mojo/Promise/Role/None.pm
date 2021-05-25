@@ -44,8 +44,8 @@ sub none {
 
 	my $count = 0;
 	$_->then(
-		sub { $none->reject( @_ ) },
-		sub { $count++; $none->resolve if $count == @promises }
+		sub { $none->reject( @_ ); return },
+		sub { $count++; $none->resolve if $count == @promises; return }
 		) foreach @promises;
 
 	return @promises ? $none : $none->resolve;

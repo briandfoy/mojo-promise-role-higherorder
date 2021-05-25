@@ -51,8 +51,8 @@ sub any {
 
 	my $count = 0;
 	$_->then(
-		sub { $any->resolve( @_ ) },
-		sub { $count++; $any->reject if $count == @promises }
+		sub { $any->resolve( @_ ); return },
+		sub { $count++; $any->reject if $count == @promises; return }
 		) foreach @promises;
 
 	return @promises ? $any : $any->reject;
