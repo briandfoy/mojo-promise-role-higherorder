@@ -3,7 +3,7 @@ use Mojo::Base '-role';
 
 use strict;
 
-our $VERSION = '1.006';
+our $VERSION = '1.007';
 
 =encoding utf8
 
