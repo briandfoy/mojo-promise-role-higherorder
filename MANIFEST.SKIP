@@ -76,3 +76,5 @@ Mojo-.*
 \A\.github\b
 
 \.gitattributes\b
+
+.downstream.json
